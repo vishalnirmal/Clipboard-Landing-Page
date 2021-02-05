@@ -177,6 +177,9 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.company-logo{
+    width: 100%;
+}
 .section-3{
     width: 50vw;
     padding: 0 var(--padding-width);
@@ -222,4 +225,119 @@ a{
 }
 .footer .social-media .icon:hover{
     color: var(--strong-cyan);
+}
+@media (max-width: 1024px){
+    .section-2{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+    .feature-3 .content .item{
+        grid-template-rows: 1fr 1fr 3fr;
+    }
+}
+@media (max-width: 768px){
+    body{
+        --padding-width: 5vw;
+        background: url("./images/bg-header-mobile.png") no-repeat top;
+        background-size: 100%;
+    }
+    .head{
+        gap: 1rem;
+    }
+    .head .heading{
+        font-size: 2em;
+    }
+    .head .description{
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .download{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .download button{
+        width: 17rem;
+    }
+    .section-1{
+        padding: 0 var(--padding-width);
+        gap: 7rem;
+        text-align: center;
+    }
+    .intro{
+        width: 100%;
+    }
+    .intro .heading{
+        font-size: 1.75em;
+    }
+    .intro .description{
+        margin: -0.5rem auto;
+        width: 85%;
+    }
+    .feature-1 .illustration{
+        grid-template-columns: auto;
+        gap: 3rem;
+    }
+    .feature-1 .item .heading{
+        font-size: 1.25em;
+    }
+    .feature-1 .item .description{
+        width: 75%;
+        margin: auto;
+    }
+    .feature-1 .illustration .image-illustration{
+        background-size: contain;
+    }
+    .feature-2{
+        padding: 0;
+    }
+    .feature-3{
+        padding: 0;
+    }
+    .feature-3 .content{
+        grid-template-columns: auto;
+    }
+    .feature-3 .item .description{
+        width: 75%;
+    }
+    .section-2{
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .section-3{
+        padding: 0 var(--padding-width);
+        width: calc(100% - 2 * var(--padding-width));
+    }
+    .section-3 .heading{
+        font-size: 1.75em;
+    }
+    .footer{
+        grid-template-columns: auto;
+        gap: 3rem;
+    }
+    .footer .links{
+        padding: 0;
+        grid-template: repeat(5, auto) / repeat(1, auto);
+        gap: 1.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .logo{
+        width: 20%;
+        margin: auto;
+    }
+    .footer .social-media{
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 425px){
+    .feature-1 .item .description{
+        width: 100%;
+    }
+    .feature-3 .item .description{
+        width: 100%;
+    }
 }
