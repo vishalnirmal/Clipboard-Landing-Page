@@ -49,8 +49,7 @@ a{
     text-align: center;
     margin: 2rem 0;
 }
-.download button{
-    all: unset;
+.download p{
     width: 12rem;
     padding: 1rem;
     font-size: 1em;
@@ -76,7 +75,7 @@ a{
                 -8px 8px 8px hsla(233, 100%, 69%, 0.15),
                 -16px 16px 16px hsla(233, 100%, 69%, 0.15);
 }
-.download button:hover{
+.download p:hover{
     opacity: 0.7;
 }
 .download .ios:active{
@@ -257,7 +256,7 @@ a{
         flex-direction: column;
         gap: 1.5rem;
     }
-    .download button{
+    .download p{
         width: 17rem;
     }
     .section-1{
